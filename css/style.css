@@ -133,4 +133,19 @@ body {
   color: #FFF;
 }
 
+ul {
+  border-top: 1px solid rgba(0, 0, 0, 0.65);
+  margin-top: 70px;
+}
+ul li {
+  margin: 24px;
+}
+ul li a {
+  font-size: 0.8rem;
+  color: rgba(0, 0, 0, 0.65);
+}
+ul li:first-child {
+  margin-top: 30px;
+}
+
 /*# sourceMappingURL=style.css.map */
