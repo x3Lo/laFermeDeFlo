@@ -14,6 +14,11 @@
   padding: 0px;
 }
 
+.container {
+  width: 370px;
+  margin: 0 auto;
+}
+
 body {
   font-family: "Roboto";
 }
@@ -43,7 +48,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Opacité sur l’arrière-plan */
+  background-color: rgba(0, 0, 0, 0.7); /* Opacité sur l’arrière-plan */
   z-index: 5; /* Derrière le menu burger mais devant le reste */
   opacity: 0; /* Initialement invisible */
   visibility: hidden; /* Empêche les clics quand invisible */
@@ -76,28 +81,23 @@ body {
 #bandeau #menuburger ul #xmark1 a {
   top: 23%;
   height: 50px;
+  font-size: 50px;
 }
 #bandeau #menuburger ul li a {
-  height: 100px;
+  height: 80px;
   padding-left: 30px;
   padding-right: 30px;
-  border-bottom: 1px solid #237B62;
   position: relative;
   color: #237B62;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-size: 24px;
+  font-weight: 500;
 }
 #bandeau #menuburger ul li a i {
   color: #237B62;
   margin-left: 30px;
-}
-#bandeau #menuburger ul li:nth-child(2) {
-  border-top: 1px solid #237B62;
-}
-#bandeau #menuburger ul li:first-child a,
-#bandeau #menuburger ul li:last-child a {
-  border-bottom: none;
 }
 #bandeau #menuburger.active {
   transform: translateX(0);
@@ -105,8 +105,32 @@ body {
   visibility: visible;
 }
 
-body.activate {
-  background-color: rgba(0, 0, 0, 0.753);
+#trouver h3 {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+#trouver iFrame {
+  border-radius: 24px;
+  width: 100%;
+  height: 300px;
+  margin-bottom: 20px;
+}
+#trouver p {
+  text-align: center;
+}
+#trouver a {
+  margin: 0 auto;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  background-color: #237B62;
+  width: 175px;
+  height: 50px;
+  align-items: center;
+  border-radius: 24px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #FFF;
 }
 
 /*# sourceMappingURL=style.css.map */
