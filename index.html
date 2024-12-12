@@ -1,18 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <div id="burger">
-                
+    <header id="ZE">
+        <nav id="bandeau">
+            <img id="logo" src="./images/logo2.png" alt="Logo de la ferme de flo ">
+            <a href="#"><i class="fa-solid fa-bars"></i></a>
+            <div id="menuburger">
+                <ul>
+                    <li id="xmark1"><a href="#"><i class="fa-solid fa-xmark"></i></a></li>
+                    <li><a href="#">Accueil<i class="fa-solid fa-chevron-right"></i></a></li>
+                    <li><a href="#">Visiter<i class="fa-solid fa-chevron-right"></i></a></li>
+                    <li><a href="#">Hébergement<i class="fa-solid fa-chevron-right"></i></a></li>
+                    <li><a href="#">Contact<i class="fa-solid fa-chevron-right"></i></a></li>
+                    <li><a href="#">Réserver en ligne<i class="fa-solid fa-chevron-right"></i></a></li>
+                </ul>
             </div>
+            <div id="menu-overlay"></div>
         </nav>
     </header>
+
+    <script type="text/javascript" src="./scripts/jquery-1.9.0.min.js"></script>
+    <script type="text/javascript">
+        $('#bandeau .fa-bars').click(function () {
+            $('#bandeau #menuburger').addClass('active');
+            $('#bandeau #menu-overlay').addClass('active'); // Active l'overlay
+        });
+        $('#bandeau .fa-xmark, #bandeau #menu-overlay').click(function () {
+            $('#bandeau #menuburger').removeClass('active');
+            $('#bandeau #menu-overlay').removeClass('active'); // Désactive l'overlay
+        });
+    </script>
 </body>
 </html>
