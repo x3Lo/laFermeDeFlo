@@ -111,23 +111,35 @@
     color: #FFF;
 }
 
+@mixin boutonSlider{
+    
+}
+
 @mixin footer{
 
-    ul{
-        border-top: 1px solid rgba(0, 0, 0, 0.65);
-        margin-top: 70px;
-
-        li{
-            margin: 24px;
-
-            a{
-                font-size: 0.8rem;
-                color: rgba(0, 0, 0, 0.65);
+    footer{
+        
+        ul{
+        
+            border-top: 1px solid rgba(0, 0, 0, 0.65);
+            margin-top: 70px;
+    
+            li{
+                margin: 24px;
+    
+                a{
+                    font-size: 0.8rem;
+                    color: rgba(0, 0, 0, 0.65);
+                }
             }
-        }
+    
+            li:first-child{
+                margin-top: 30px;
+            }
 
-        li:first-child{
-            margin-top: 30px;
+            li:last-child{
+                margin-bottom: 70px;
+            }
         }
     }
 }

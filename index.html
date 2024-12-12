@@ -3,7 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Accueil - La Ferme De Flo</title>
+
+    <!-- style pour le slider -->
+    <link rel="stylesheet" href="./themes/default/default.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="./css/nivo-slider.css" type="text/css" media="screen" />
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
     <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -27,6 +32,23 @@
     </header>
 
     <main class="container">
+        <div class="slider-wrapper theme-default">
+            <div id="slider" class="nivoSlider">
+                <img src="./images/visite_ferme_2-3.jpg" alt="Enfant avec un lapin" title="#visiter"/>
+                <img src="./images/gite_2-3.png" alt="Chambre avec lit double" title="#louer"/>
+            </div>
+            <div id="visiter" class="nivo-html-caption">
+                <h2>VISITER LA FERME</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum corporis consectetur consequatur necessitatibus aut aliquid reiciendis sequi in provident, commodi ex voluptatem laudantium alias eos voluptatum ad ea molestiae maxime?</p>
+                <a href="#">VISITER</a>
+            </div>
+            <div id="louer" class="nivo-html-caption">
+                <h2>LOUER UN GITE</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum corporis consectetur consequatur necessitatibus aut aliquid reiciendis sequi in provident, commodi ex voluptatem laudantium alias eos voluptatum ad ea molestiae maxime?</p>
+                <a href="#">LOUER</a>
+            </div>
+        </div>
+
         <div id="trouver">
             <h3>Nous Trouver</h3>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5312.075437088578!2d3.255274884335566!3d48.26364866699537!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47ef10d0b71ee987%3A0x63f9503a443fe40!2s7%20Rue%20des%20Ramoneds%2C%2089140%20%C3%89vry!5e0!3m2!1sfr!2sfr!4v1734001783672!5m2!1sfr!2sfr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -57,7 +79,19 @@
         </div>
     </footer>
 
+
+
+    <!-- nivoSlider -->
     <script type="text/javascript" src="./scripts/jquery-1.9.0.min.js"></script>
+    <script type="text/javascript" src="./scripts/jquery.nivo.slider.js"></script>
+    <script type="text/javascript">
+        $(window).load(function () {
+            $('#slider').nivoSlider();
+        });
+    </script>
+
+    <!-- Menu Burger -->
+
     <script type="text/javascript">
         $('#bandeau .fa-bars').click(function () {
             $('#bandeau #menuburger').addClass('active');
