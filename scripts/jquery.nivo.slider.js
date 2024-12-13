@@ -647,18 +647,18 @@
     
     //Default settings
     $.fn.nivoSlider.defaults = {
-        effect: 'random',
+        effect: 'fade',
         slices: 15,
         boxCols: 8,
         boxRows: 4,
         animSpeed: 500,
-        pauseTime: 300,
+        pauseTime: 4000,
         startSlide: 0,
-        directionNav: true,
+        directionNav: false,
         controlNav: true,
         controlNavThumbs: false,
         pauseOnHover: true,
-        manualAdvance: true,
+        manualAdvance: false,
         prevText: 'Prev',
         nextText: 'Next',
         randomStart: false,

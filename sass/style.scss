@@ -29,7 +29,7 @@ body{
         border-radius: 24px;
     }
     .nivo-caption{
-        height: 228px;
+        height: 240px;
         background-color: $colorgreen;
         opacity: 1;
         text-align: center;
@@ -50,6 +50,10 @@ body{
             color: $colorgreen;
         }
     }
+}
+
+.slider-wrapper.active{
+    opacity: 0.8;
 }
 
 .theme-default .nivo-controlNav a{
@@ -102,4 +106,30 @@ body{
     }
 }
 
-@include footer
+@include footer;
+
+
+// --------------------------------- visiter.html -------------------
+
+
+.visite{
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    background-color: $colorgreen;
+    border-radius: 24px;
+
+    img{
+        width: 110px;
+        border-radius: 24px 0 0 24px;
+    }
+
+    h2{
+        color: #FFF;
+        font-size: 1rem;
+    }
+}
+
+.visite:first-child{
+    margin-top: 60px;
+}

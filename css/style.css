@@ -141,7 +141,7 @@ body {
   border-radius: 24px;
 }
 .slider-wrapper .nivo-caption {
-  height: 228px;
+  height: 240px;
   background-color: #237B62;
   opacity: 1;
   text-align: center;
@@ -162,6 +162,10 @@ body {
   font-weight: bold;
   font-size: 1.2rem;
   color: #237B62;
+}
+
+.slider-wrapper.active {
+  opacity: 0.8;
 }
 
 .theme-default .nivo-controlNav a {
@@ -228,6 +232,26 @@ footer ul li:first-child {
 }
 footer ul li:last-child {
   margin-bottom: 70px;
+}
+
+.visite {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  background-color: #237B62;
+  border-radius: 24px;
+}
+.visite img {
+  width: 110px;
+  border-radius: 24px 0 0 24px;
+}
+.visite h2 {
+  color: #FFF;
+  font-size: 1rem;
+}
+
+.visite:first-child {
+  margin-top: 60px;
 }
 
 /*# sourceMappingURL=style.css.map */
