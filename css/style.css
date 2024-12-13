@@ -18,16 +18,40 @@ html, body {
   overflow-x: hidden; /* <---------- SUPER IMPORTANT  */
 }
 
-.container {
-  max-width: 370px;
-  width: 100%;
-  margin: 0 auto;
-}
-
 body {
   font-family: "Roboto";
 }
 
+@media screen and (max-width: 374px) {
+  .container {
+    max-width: 280px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .slider-wrapper .nivoSlider {
+    height: 500px;
+  }
+}
+@media screen and (min-width: 375px) {
+  .container {
+    max-width: 320px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .slider-wrapper .nivoSlider {
+    height: 550px;
+  }
+}
+@media screen and (min-width: 425px) {
+  .container {
+    max-width: 370px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .slider-wrapper .nivoSlider {
+    height: 600px;
+  }
+}
 #bandeau {
   height: 100px;
   display: flex;
@@ -110,26 +134,28 @@ body {
   visibility: visible;
 }
 
-.nivoSlider {
-  height: 635px;
+.slider-wrapper {
+  margin-top: 40px;
+}
+.slider-wrapper .nivoSlider {
   border-radius: 24px;
 }
-.nivoSlider .nivo-caption {
+.slider-wrapper .nivo-caption {
   height: 228px;
   background-color: #237B62;
   opacity: 1;
   text-align: center;
 }
-.nivoSlider .nivo-caption h2 {
+.slider-wrapper .nivo-caption h2 {
   font-size: 1.7rem;
   font-weight: bold;
   margin-top: 10px;
   margin-bottom: 20px;
 }
-.nivoSlider .nivo-caption p {
+.slider-wrapper .nivo-caption p {
   margin-bottom: 25px;
 }
-.nivoSlider .nivo-caption a {
+.slider-wrapper .nivo-caption a {
   background-color: #FFF;
   border-radius: 30px;
   padding: 14px 48px;
@@ -151,6 +177,11 @@ body {
   border-radius: 50px;
   width: 16px;
   height: 16px;
+}
+
+.theme-default .nivo-directionNav a {
+  background: url(../themes/default/chevron-left-solid.svg) no-repeat;
+  color: #FFF;
 }
 
 #trouver h3 {

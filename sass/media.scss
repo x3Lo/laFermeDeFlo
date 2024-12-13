@@ -1,0 +1,49 @@
+@mixin mediaScreen{
+    @media screen and (max-width: 374px){ 
+        .container{
+            max-width: 280px;
+            width: 100%;
+            margin: 0 auto;
+        
+        }
+
+        .slider-wrapper{
+
+            .nivoSlider{
+                height: 500px;
+            }
+        }
+    }
+    
+    @media screen and (min-width: 375px){ 
+        .container{
+            max-width: 320px;
+            width: 100%;
+            margin: 0 auto;
+        
+        }
+
+        .slider-wrapper{
+
+            .nivoSlider{
+                height: 550px;
+            }
+        }
+    }
+    
+    @media screen and (min-width: 425px){ 
+        .container{
+            max-width: 370px;
+            width: 100%;
+            margin: 0 auto;
+        
+        }
+
+        .slider-wrapper{
+
+            .nivoSlider{
+                height: 600px;
+            }
+        }
+    }
+}
