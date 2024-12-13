@@ -112,7 +112,11 @@
 }
 
 @mixin boutonSlider{
-    
+    background-color: #FFF;
+    border-radius: 30px;
+    padding: 14px 48px;
+    font-weight: bold;
+    font-size: 1.2rem;
 }
 
 @mixin footer{

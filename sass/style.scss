@@ -26,26 +26,48 @@ body{
 @include navbarMobile;
 
 .nivoSlider{
-    height: 555px;
+    height: 635px;
+    border-radius: 24px;
 
     .nivo-caption{
-        height: 300px;
+        height: 228px;
         background-color: $colorgreen;
         opacity: 1;
         text-align: center;
 
         h2{
+            font-size: 1.7rem;
+            font-weight: bold;
             margin-top: 10px;
             margin-bottom: 20px;
         }
 
         p{
-            margin-bottom: 10px;
+            margin-bottom: 25px;
         }
 
         a{
-            @include boutonSlider
+            @include boutonSlider;
+            color: $colorgreen;
         }
+    }
+}
+
+.theme-default .nivo-controlNav a{
+    background-color: #D9D9D9;
+    border-radius: 50px;
+    width: 16px;
+    height: 16px;
+    margin: 4px;
+}
+
+.nivo-controlNav{
+
+    a.active{
+        background-color: $colorgreen;
+        border-radius: 50px;
+        width: 16px;
+        height: 16px;
     }
 }
 
