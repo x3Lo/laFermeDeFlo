@@ -27,23 +27,47 @@
     </header>
 
     <main class="container">
-        <div id="visiteparticulier">
-            <div id="contenu">
-                <h1>Visite de particulier</h1>
-                <p><strong>À la ferme de Flo'</strong>, vous découvrirez plus de <strong>300 animaux</strong>, dont la grande majorité sont des <strong>abandons</strong>. C'est triste mais une réalité! Cependant, grâce à la passion et au dévouement de la ferme, ces animaux retrouvent une <strong>deuxième chance</strong> et un foyer aimant.<br><br>La ferme est un havre de paix où chaque créature chèvre espiègle, cheval majestueux ou lapin timide reçoit les soins et l'attention nécessaires. Enfants et adultes repartent avec des souvenirs inoubliables et une meilleure compréhension de l'importance de la <strong>compassion</strong> envers les animaux.<br><br>C'est un lieu de partage, respect et amour, où chaque être vivant trouve sa place et sa dignité.
+        <div id="formulaire">
+            <h1>Une question ?</h1>
+            <form action="" method="get">
+                <p>
+                    <label for="nom">Nom</label>
+                    <input type="text" name="nom">
                 </p>
-                <img src="./images/visite_particulier.jpg" alt="2 enfants dans un tracteur">
-                <p>Au cours de cette <strong>visite pédagogique</strong>, vous serez accompagné par <strong>Flo' et/ou son équipe</strong> pour rencontrer les <strong>animaux</strong> (basse-cour, cochons d'inde, lapins, cochons, chèvres, vache, ânes, cheval...). Des activités ludiques vous permettront de comprendre le <strong>monde agricole</strong> et l'importance de la règle des <strong>3B (bien-être, bien vivre et bien manger)</strong>.<br>En plus des activités, des <strong>panneaux informatifs</strong> vous expliqueront chaque espèce animale et leur rôle dans la ferme. La visite se terminera par la <strong>boutique des producteurs</strong>, où vous pourrez découvrir et déguster des produits locaux : <strong>pâtes, bières, miel, œufs fermiers, légumes de saison</strong>.<br>Nous espérons que cette journée à la ferme vous laissera des souvenirs inoubliables et renforcera votre lien avec <strong>la nature et les animaux</strong>. Venez nombreux pour partager ce moment de <strong>découverte et de convivialité</strong> !</p>
-                <img src="./images/visite_particulier_2_3-2.jpg" alt="2 enfant avec un cochon">
-            </div>
-
-            <div class="pedago">
-                <h3>Visites pédagogique</h3>
-                <p>Venez en famille et/ou entre amis: <br> <br> -Visite de 1h30 à 8.80€ TTC par personne (Gratuit pour les enfants qui ne marche pas encore)<br> <br> -Supplément dégustation de produits locaux : 2.80€ par personne (sucré et salé)</p>
-            </div>
+            </form>
+            <form action="" method="get">
+                <p>
+                    <label for="email">E-mail</label>
+                    <input type="email" name="email">
+                </p>
+            </form>
+            <form action="" method="get">
+                <p>
+                    <label for="telephone">Téléphone</label>
+                    <input type="text" name="telephone">
+                </p>
+            </form>
+            <form action="" method="get">
+                <p>
+                    <label for="menu">Objet de votre message</label>
+                    <select name="menu" id="menu">
+                        <option value="selectionner">Sélectionner une option ▼</option>
+                        <option value="visite">Visiter la ferme</option>
+                        <option value="hebergement">Réserver un hébergement</option>
+                        <option value="autres">Autres</option>
+                    </select>
+                </p>
+            </form>
+            <form action="" method="get">
+                <p>
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" rows="10"></textarea>
+                </p>
+            </form>
+            <button>ENVOYER</button>
         </div>
     </main>
-    
+
     <footer class="container">
         <div id="planSite">
             <ul>

@@ -145,6 +145,7 @@ body{
 // ------------------------------- visiterParticulier.html -------------------------------
 
 #visiteparticulier{
+    margin-bottom: 200px;
 
     #contenu{
         h1{
@@ -184,6 +185,67 @@ body{
             font-size: 0.9rem;
             font-weight: lighter;
         }
+    }
+}
+
+
+// ------------------------------- contact.html -------------------------------
+
+#formulaire{
+    margin-bottom: 200px;
+
+    h1{
+        margin-top: 30px;
+        font-size: 1.2rem;
+        font-weight: normal;
+    }
+
+    form{
+
+        p{
+            display: flex;
+            flex-direction: column;
+            margin-top: 40px;
+            
+            select,
+            input{
+                margin-top: 10px;
+                border: 1px solid $colorgreen;
+                border-radius: 20px;
+                height: 66px
+            }
+
+            select{
+                text-align: center;
+                font-size: 1rem;
+                appearance: none;
+                -moz-appearance: none;
+                -webkit-appearance: none;
+                cursor: pointer;
+            }
+
+            textarea:focus,
+            input:focus,
+            select:focus {
+                outline: none;
+                border-color: $colororange;
+            }
+
+            textarea{
+                border: 1px solid $colorgreen;
+                border-radius: 24px;
+                margin-top: 10px;
+            }
+        }
+    }
+
+    button{
+        margin-top: 30px;
+        @include bouton1
+    }
+
+    button:hover{
+        background-color: $colororange;
     }
 }
 
