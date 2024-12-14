@@ -110,6 +110,10 @@ body{
         justify-content: center;
         @include bouton1
     }
+
+    a:hover{
+        @include bouton1hover
+    }
 }
 
 @include footer;
@@ -245,11 +249,33 @@ body{
     }
 
     button:hover{
-        background-color: $colororange;
+        @include bouton1hover
     }
 }
 
 
+// ------------------------------- hebergment.html -------------------------------
+
+#reserver{
+    margin: 0 auto;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    @include bouton1;
+}
+
+#reserver:hover{
+    @include bouton1hover
+}
+
+#heberg{
+
+    .loc{
+        display: grid;
+        width: 100%;
+        grid-template-columns: 33% 33% 33%;
+    }
+}
 
 // ------------------------------- Media -------------------------------
 
