@@ -214,6 +214,7 @@ body{
             select,
             input{
                 margin-top: 10px;
+                padding: 0 15px;
                 border: 1px solid $colorgreen;
                 border-radius: 20px;
                 height: 66px
@@ -237,6 +238,7 @@ body{
 
             textarea{
                 border: 1px solid $colorgreen;
+                padding: 15px;
                 border-radius: 24px;
                 margin-top: 10px;
             }
@@ -271,9 +273,81 @@ body{
 #heberg{
 
     .loc{
+        margin-top: 50px;
         display: grid;
+        background-color: $colorblue;
+        border-radius: 20px;
+        justify-content: center;
         width: 100%;
-        grid-template-columns: 33% 33% 33%;
+        grid-template: repeat(2, 120px) 80px 20px repeat(2, 100px) repeat(2, 80px) / repeat(3, 123px);
+        
+        .img{
+            width: 100%;
+            grid-area: 1/1/3/4;
+            border-radius: 20px 20px 0 0;
+            background-size: cover;
+            background-position: 50% 50%;
+        }
+
+        h3{
+            grid-area: 3/1/4/4;
+            display: flex;
+            align-items: center;
+            margin-left: 30px;
+        }
+
+        p{
+            grid-area: 5/1/7/4;
+            margin-left: 15px;
+        }
+        .icone{
+            grid-area: 7/1/9/4;
+            display: flex;
+            flex-wrap: wrap; 
+            max-width: 370px;
+            width: 100%;
+
+           .spe{
+                width: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                i{
+                    margin: 0 20px;
+                }
+            }
+
+            .spe:nth-child(3){
+                width: 100%;
+            }
+        }
+
+        #vache{
+            background: url(../images/chambre_double_vache_1_3-2.jpg);
+        }
+
+        #conf{
+            background: url(../images/gite_confort_3-2.jpg);
+        }
+
+        #chevre{
+            background: url(../images/chambre_chevre_double_3-2.jpg);
+        }
+
+        #cochon{
+            background: url(../images/gite_3-2.png);
+        }
+
+        #gite12{
+            background: url(../images/gite_ou_studio_familiale_3-2.jpg);
+        }
+
+        #coq{
+            background: url(../images/chambre_coq_double_3-2.jpg);
+        }
+
+
     }
 }
 
